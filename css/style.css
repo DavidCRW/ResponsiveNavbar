@@ -66,6 +66,8 @@ body{
 
 .responsiveNav{
     cursor: pointer;
+    float: right;
+    margin: 15px 15px 0 0;
 }
 .responsiveNav span{
     background-color: black;
@@ -84,10 +86,6 @@ body{
     .navbar .links{
         display: none;
         text-align: center;
-    }
-    .responsiveNav{
-        float: right;
-        margin: 15px 15px 0 0;
     }
     .responsiveNav span{
         display: block;
