@@ -1,0 +1,98 @@
+/* Main settings */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(210, 36%, 96%);
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* Container */
+.container{
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+/* Navbar links */
+.links{
+    display: flex;
+}
+.links li{
+    list-style: none;
+}
+.links a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: hsl(209, 34%, 30%);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition-duration: 0.1s;
+}
+
+.links a:hover{
+    color: hsl(210, 37%, 53%);
+}
+
+/* Navbar logo */
+.social-icons{
+    display: flex;
+}
+.social-icons li{
+    list-style: none;
+}
+.social-icons a{
+    padding: 0.5rem;
+    color: hsl(205, 78%, 60%);
+    transition-duration: 0.1s;
+}
+.social-icons a:hover{
+    color: hsl(205, 100%, 70%);
+}
+
+.responsiveNav{
+    cursor: pointer;
+}
+.responsiveNav span{
+    background-color: black;
+    display: none;
+    height: 2px;
+    width: 20px;
+    margin: 4px;
+}
+
+/* Responsive */
+
+@media (max-width: 675px){
+    .navbar{
+        display: block;
+    }
+    .navbar .links{
+        display: none;
+        text-align: center;
+    }
+    .responsiveNav{
+        float: right;
+        margin: 15px 15px 0 0;
+    }
+    .responsiveNav span{
+        display: block;
+    }
+    .navbar .social-icons{
+        display: none;
+    }
+}
